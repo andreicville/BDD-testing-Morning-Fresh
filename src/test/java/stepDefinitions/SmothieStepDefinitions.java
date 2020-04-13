@@ -14,7 +14,7 @@ public class SmothieStepDefinitions {
 	private DrinkCatalog drinkCatalog = new DrinkCatalog();
 	private SmoothieSchema smoothieSchema = new SmoothieSchema(drinkCatalog);
 	private MorningFreshnessMember michael;
-
+ 
 	@Given("the following drink categories:")
 	public void the_following_drink_categories(List<Map<String, String>> drinkCategories) {
 		drinkCategories.stream().forEach(drinkCategory -> {
